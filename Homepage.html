@@ -295,6 +295,20 @@
             font-weight: medium;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        .cp{
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .cp p{
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: cursive;
+        }
     </style>
     <div class="c2">
         <h1>Key Metrics</h1><br>
@@ -307,10 +321,15 @@
             </div> 
             <div class="box">
                 <span style="font-size: 2rem;" id="count3">0</span> <span style="font-size: 1rem;">Postal Circles</span>
+            </div>
+            <div class="box">
+                <span style="font-size: 2rem;" id="count4">0</span> <span style="font-size: 1rem;">Miles Area Covered</span>
             </div> 
         </div>
     </div>
-    
+    <div class="cp">
+        <p>India's vast postal network, with 165,000 post offices and 19,000 pin codes, is the backbone of national logistics. However, evolving demands call for smarter solutions. Our AI-driven system complements this robust network, enhancing accuracy, reducing delays, and delivering seamless service in today’s digital world.</p>
+    </div>
     <script>
         function countUp(targetElement, targetNumber, duration) {
             let currentNumber = 0;
@@ -340,6 +359,7 @@
                         countUp(document.getElementById('count1'), 165000, 2000);
                         countUp(document.getElementById('count2'), 19000, 1400);
                         countUp(document.getElementById('count3'), 23, 1000);
+                        countUp(document.getElementById('count4'), 53, 1000);
                         observer.unobserve(entry.target);  
                     }
                 });
